@@ -127,7 +127,7 @@ const App: React.FC = () => {
             <img 
             src="https://i.postimg.cc/5y2pkLJ9/logo.jpg" 
             alt="Solar Logo" 
-            className="h-20 w-auto object-contain" 
+            className="h-32 w-auto object-contain" 
           />
           </div>
           
