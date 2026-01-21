@@ -137,7 +137,7 @@ const App: React.FC = () => {
             
             <div>
               <div className="flex items-center justify-center">
-                <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Nos Services</h5>
+                <h4 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-10 font-extrabold">Nos Services</h4>
               </div>
               
               <ul className="space-y-4 list-disc text-sm font-bold text-[#4A6278]">
@@ -150,7 +150,7 @@ const App: React.FC = () => {
 
             <div >
               <div className="flex items-center justify-center">
-                  <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Contactez-Nous</h5>
+                  <h4 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-10 font-extrabold">Contactez-Nous</h4>
               </div>
               <ul className="space-y-6 text-sm font-bold text-[#4A6278]">
                 <li className="flex gap-4 items-start leading-relaxed"><i className="fa-solid fa-location-dot text-[#FFC600] mt-1"></i> 45 Arrondissement Ouanaminthe, Nord-Est HT<br/>Rue Parc Sportif Manquette</li>
