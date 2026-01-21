@@ -132,17 +132,17 @@ const App: React.FC = () => {
             
             <div>
               <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Nos Services</h5>
-              <ul className="space-y-4 text-sm font-bold text-[#4A6278]">
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Photovoltaïque Résidentiel</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Électricité Tertiaire</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Bornes de Recharge</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Domotique & Monitoring</a></li>
+              <ul className="space-y-4 list-disc text-sm font-bold text-[#4A6278]">
+                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Consultation et étude technique des systemes solaires.</a></li>
+                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Évaluation de consommation d'énergie électrique et dimensionnement de systeme solaire.</a></li>
+                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Installation complete de systeme photovoltaique(Panneau solaire , Regulateur, batterie, Inverter...)</a></li>
+                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Services de diagnostic et de prevention des anomalies dans les systemes solaires</a></li>
               </ul>
             </div>
 
             <div>
               <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">La Société</h5>
-              <ul className="space-y-4 text-sm font-bold text-[#4A6278]">
+              <ul className="space-y-4 list-disc text-sm font-bold text-[#4A6278]">
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Notre Vision</a></li>
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Réalisations</a></li>
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Normes & Qualité</a></li>
@@ -151,11 +151,12 @@ const App: React.FC = () => {
             </div>
 
             <div>
-              <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Nous Contacter</h5>
+              <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Contactez-Nous</h5>
               <ul className="space-y-6 text-sm font-bold text-[#4A6278]">
-                <li className="flex gap-4 items-start leading-relaxed"><i className="fa-solid fa-location-dot text-[#FFC600] mt-1"></i> 45 Avenue de l'Innovation<br/>75017 Paris, France</li>
-                <li className="flex gap-4 items-center"><i className="fa-solid fa-phone text-[#FFC600]"></i> 01 45 67 89 00</li>
-                <li className="flex gap-4 items-center"><i className="fa-solid fa-envelope text-[#FFC600]"></i> contact@adinnovation.plus</li>
+                <li className="flex gap-4 items-start leading-relaxed"><i className="fa-solid fa-location-dot text-[#FFC600] mt-1"></i> 45 Arrondissement Ouanaminthe, Nord-Est HT<br/>Rue Parc Sportif Manquette</li>
+                <li className="flex gap-4 items-center"><i className="fa-solid fa-phone text-[#FFC600]"></i> +509 4076-8840</li>
+                <li className="flex gap-4 items-center"><i className="fa-solid fa-phone text-[#FFC600]"></i> +509 3873-3401</li>
+                <li className="flex gap-4 items-center"><i className="fa-solid fa-envelope text-[#FFC600]"></i> instagram: @adinnovation01</li>
               </ul>
             </div>
           </div>
