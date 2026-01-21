@@ -156,7 +156,7 @@ const App: React.FC = () => {
                 <li className="flex gap-4 items-start leading-relaxed"><i className="fa-solid fa-location-dot text-[#FFC600] mt-1"></i> 45 Arrondissement Ouanaminthe, Nord-Est HT<br/>Rue Parc Sportif Manquette</li>
                 <li className="flex gap-4 items-center"><i className="fa-solid fa-phone text-[#FFC600]"></i> +509 4076-8840</li>
                 <li className="flex gap-4 items-center"><i className="fa-solid fa-phone text-[#FFC600]"></i> +509 3873-3401</li>
-                <li className="flex gap-4 items-center"><i className="fa-solid fa-envelope text-[#FFC600]"></i> instagram: @adinnovation01</li>
+                <li className="flex gap-4 items-center"><i className="fa-solid fa-envelope text-[#FFC600]"></i>adinnovation01</li>
               </ul>
             </div>
           </div>
