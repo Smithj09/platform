@@ -175,4 +175,9 @@ const Calculator: React.FC = () => {
   );
 };
 
-export default Calculator;
+const calculator: React.FC = () => {
+  return null; // This tells React to render nothing
+};
+
+export default calculator;
+// export default Calculator;
