@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
           {/* Logo Replacement */}
             <div className="flex-shrink-0 cursor-pointer py-2">
               <img 
-                src="/logo.jpg" 
+                src="https://i.postimg.cc/5y2pkLJ9/logo.jpg" 
                 alt="Logo" 
                 className="h-20 w-auto object-contain" 
               />
