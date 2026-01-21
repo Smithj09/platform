@@ -106,7 +106,7 @@ const App: React.FC = () => {
         <div className="max-w-5xl mx-auto px-4 relative z-10">
             <h3 className="text-4xl md:text-6xl font-black text-white mb-8">Passez à l'énergie <br/> du futur dès aujourd'hui.</h3>
             <p className="text-white/70 mb-12 max-w-2xl mx-auto text-lg">Plus de 500 installations réussies sous le standard AD Innovation.</p>
-            <a href="#contact" className="inline-block bg-[#FFC600] text-[#0D3156] px-16 py-6 rounded-3xl font-black uppercase tracking-widest text-sm hover:scale-110 transition-all shadow-2xl shadow-[#FFC600]/40">
+            <a href="#contact" className="inline-block bg-[#FFC600] text-[#0D3156] px-16 py-6 rounded-3xl font-black uppercase tracking-widest text-sm hover:scale-110 transition-all shadow-2xl shadow-[#FFC600]/40 text-2xl">
                 Contactez un Expert
             </a>
         </div>
@@ -147,7 +147,7 @@ const App: React.FC = () => {
             
             <div>
               <div className="flex items-center justify-center">
-                <h4 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-10 font-extrabold">Nos Services</h4>
+                <h4 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-10 font-extrabold text-sm">Nos Services</h4>
               </div>
               
               <ul className="space-y-4 list-disc text-sm font-bold text-[#4A6278]">
@@ -160,7 +160,7 @@ const App: React.FC = () => {
 
             <div >
               <div className="flex items-center justify-center">
-                  <h4 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-10 font-extrabold">Contactez-Nous</h4>
+                  <h4 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-10 font-extrabold text-sm">Contactez-Nous</h4>
               </div>
               <ul className="space-y-6 text-sm font-bold text-[#4A6278]">
                 <li className="flex gap-4 items-start leading-relaxed"><i className="fa-solid fa-location-dot text-[#FFC600] mt-1"></i> 45 Arrondissement Ouanaminthe, Nord-Est HT<br/>Rue Parc Sportif Manquette</li>
