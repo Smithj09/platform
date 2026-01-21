@@ -116,9 +116,9 @@ const App: React.FC = () => {
 
 {/* FOOTER */}
       {/* Pied de page */}
-      <footer id="contact" className="bg-white text-[#0D3156] pt-10 pb-10 overflow-hidden border-t border-slate-100">
+      <footer id="contact" className="bg-white text-[#0D3156] pt-10 pb-5 overflow-hidden border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-10">
             <div className="lg:col-span-1">
               <div className="mb-8">
                 <Logo />
