@@ -113,7 +113,7 @@ const App: React.FC = () => {
       {/* Pied de page */}
       <footer id="contact" className="bg-white text-[#0D3156] pt-24 pb-12 overflow-hidden border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-20">
             <div className="lg:col-span-1">
               <div className="mb-8">
                 <Logo />
@@ -139,7 +139,7 @@ const App: React.FC = () => {
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Services de diagnostic et de prevention des anomalies dans les systemes solaires</a></li>
               </ul>
             </div>
-
+{/* 
             <div>
               <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">La Société</h5>
               <ul className="space-y-4 list-disc text-sm font-bold text-[#4A6278]">
@@ -148,10 +148,12 @@ const App: React.FC = () => {
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Normes & Qualité</a></li>
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Blog Innovation</a></li>
               </ul>
-            </div>
+            </div> */}
 
-            <div>
-              <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Contactez-Nous</h5>
+            <div >
+              <div className="flex items-center justify-center">
+                  <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Contactez-Nous</h5>
+              </div>
               <ul className="space-y-6 text-sm font-bold text-[#4A6278]">
                 <li className="flex gap-4 items-start leading-relaxed"><i className="fa-solid fa-location-dot text-[#FFC600] mt-1"></i> 45 Arrondissement Ouanaminthe, Nord-Est HT<br/>Rue Parc Sportif Manquette</li>
                 <li className="flex gap-4 items-center"><i className="fa-solid fa-phone text-[#FFC600]"></i> +509 4076-8840</li>
