@@ -120,8 +120,12 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-10">
             <div className="lg:col-span-1">
-              <div className="mb-8">
-                <Logo />
+             <div className="mb-19">
+                  <img 
+                    src="/logo.jpg"  // If your logo is in the 'public' folder
+                    alt="Logo" 
+                    className="h-40 w-auto" 
+                  />
               </div>
               <p className="text-[#4A6278] leading-relaxed mb-10 text-xs font-medium max-w-xs">
                 Ingénierie électrique et solutions solaires durables. Excellence technique au service de votre patrimoine.
