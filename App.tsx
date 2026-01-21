@@ -116,7 +116,7 @@ const App: React.FC = () => {
 
 {/* FOOTER */}
       {/* Pied de page */}
-      <footer id="contact" className="bg-white text-[#0D3156] pt-24 pb-12 overflow-hidden border-t border-slate-100">
+      <footer id="contact" className="bg-white text-[#0D3156] pt-10 pb-10 overflow-hidden border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-20">
             <div className="lg:col-span-1">
@@ -161,7 +161,7 @@ const App: React.FC = () => {
             </div>
           </div>
           
-          <div className="pt-12 border-t border-slate-100 text-center text-[10px] text-[#4A6278]/60 font-black tracking-[0.4em] uppercase">
+          <div className="pt-1 border-t border-slate-100 text-center text-[10px] text-[#4A6278]/60 font-black tracking-[0.4em] uppercase">
             <p>&copy; {new Date().getFullYear()} AD Innovation Services Plus. Engineering Excellence.</p>
           </div>
         </div>
