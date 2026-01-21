@@ -1,6 +1,6 @@
 
+// export default Navbar;
 import React, { useState } from 'react';
-import Logo from './Logo';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +14,21 @@ const Navbar: React.FC = () => {
   return (
     <nav className="fixed w-full z-50 bg-white border-b border-slate-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Height adjusted to h-24 to accommodate your larger logo size */}
         <div className="flex justify-between items-center h-20">
-          {/* Logo - Ajusté pour le Header */}
-          <div className="flex-shrink-0 cursor-pointer py-2" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <Logo isHeader={true} />
+          
+          {/* Logo Replacement */}
+          <div 
+            className="flex-shrink-0 cursor-pointer py-2" 
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <div className="mb-0"> {/* Changed mb-19 to mb-0 so it stays centered in the navbar */}
+              <img 
+                src="/logo.jpg" 
+                alt="Logo" 
+                className="h-20 w-auto object-contain" // Recommended h-20 for visibility, adjust to h-40 if you want it very large
+              />
+            </div>
           </div>
           
           {/* Menu Desktop - Caché sur Mobile */}
@@ -39,7 +50,7 @@ const Navbar: React.FC = () => {
             </a>
           </div>
 
-          {/* Bouton Mobile - Toujours visible sous 768px */}
+          {/* Bouton Mobile */}
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setIsOpen(!isOpen)}
