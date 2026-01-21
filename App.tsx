@@ -2,7 +2,9 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Calculator from './components/Calculator';
-import Logo from './components/Logo';
+// import Logo from './components/Logo';
+'../assets/logo.jpg';
+
 
 const App: React.FC = () => {
   return (
@@ -120,16 +122,19 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-10">
             <div className="lg:col-span-1">
-             <div className="mb-19">
-                  <img 
-                    src="/logo.jpg"  // If your logo is in the 'public' folder
-                    alt="Logo" 
-                    className="h-40 w-auto" 
-                  />
-              </div>
-              <p className="text-[#4A6278] leading-relaxed mb-10 text-xs font-medium max-w-xs">
-                Ingénierie électrique et solutions solaires durables. Excellence technique au service de votre patrimoine.
-              </p>
+             <div className="flex-shrink-0 cursor-pointer  flex items-center justify-center">
+            <img 
+              src="/logo.jpg" 
+              alt="Logo" 
+              className="h-24 w-auto object-contain" 
+            />
+          </div>
+          
+             <div className="flex items-center justify-center">
+              <p className="text-[#4A6278] leading-relaxed mb-15 text-base font-medium max-w-xs">
+  Ingénierie électrique et solutions solaires durables. Excellence technique au service de votre patrimoine.
+</p>
+             </div>
               <div className="flex gap-4">
                 {['facebook', 'twitter', 'linkedin', 'instagram'].map(social => (
                   <a key={social} href="#" className="w-12 h-12 rounded-2xl bg-[#0D3156]/5 flex items-center justify-center text-[#0D3156] hover:bg-[#FFC600] hover:text-[#0D3156] transition-all">
