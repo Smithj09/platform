@@ -110,6 +110,11 @@ const App: React.FC = () => {
         </div>
       </section>
 
+
+
+
+
+{/* FOOTER */}
       {/* Pied de page */}
       <footer id="contact" className="bg-white text-[#0D3156] pt-24 pb-12 overflow-hidden border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
@@ -131,7 +136,10 @@ const App: React.FC = () => {
             </div>
             
             <div>
-              <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Nos Services</h5>
+              <div className="flex items-center justify-center">
+                <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">Nos Services</h5>
+              </div>
+              
               <ul className="space-y-4 list-disc text-sm font-bold text-[#4A6278]">
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Consultation et étude technique des systemes solaires.</a></li>
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Évaluation de consommation d'énergie électrique et dimensionnement de systeme solaire.</a></li>
@@ -139,16 +147,6 @@ const App: React.FC = () => {
                 <li><a href="#" className="hover:text-[#FFC600] transition-colors">Services de diagnostic et de prevention des anomalies dans les systemes solaires</a></li>
               </ul>
             </div>
-{/* 
-            <div>
-              <h5 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-8">La Société</h5>
-              <ul className="space-y-4 list-disc text-sm font-bold text-[#4A6278]">
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Notre Vision</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Réalisations</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Normes & Qualité</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Blog Innovation</a></li>
-              </ul>
-            </div> */}
 
             <div >
               <div className="flex items-center justify-center">
