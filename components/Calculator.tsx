@@ -180,4 +180,3 @@ const calculator: React.FC = () => {
 };
 
 export default calculator;
-// export default Calculator;

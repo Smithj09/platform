@@ -123,11 +123,12 @@ const App: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-10">
             <div className="lg:col-span-1">
              <div className="flex-shrink-0 cursor-pointer  flex items-center justify-center">
+                   
             <img 
-              src="/logo.jpg" 
-              alt="Logo" 
-              className="h-24 w-auto object-contain" 
-            />
+            src="https://i.postimg.cc/5y2pkLJ9/logo.jpg" 
+            alt="Solar Logo" 
+            className="h-20 w-auto object-contain" 
+          />
           </div>
           
              <div className="flex items-center justify-center">
