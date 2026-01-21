@@ -136,13 +136,18 @@ const App: React.FC = () => {
   Ingénierie électrique et solutions solaires durables. Excellence technique au service de votre patrimoine.
 </p>
              </div>
-              <div className="flex gap-4">
+
+             <div className="flex items-center justify-center">
+               <div className="flex gap-4">
                 {['facebook', 'twitter', 'linkedin', 'instagram'].map(social => (
                   <a key={social} href="#" className="w-12 h-12 rounded-2xl bg-[#0D3156]/5 flex items-center justify-center text-[#0D3156] hover:bg-[#FFC600] hover:text-[#0D3156] transition-all">
                     <i className={`fa-brands fa-${social} text-lg`}></i>
                   </a>
                 ))}
               </div>
+
+             </div>
+         
             </div>
             
             <div>
