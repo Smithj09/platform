@@ -133,7 +133,7 @@ const App: React.FC = () => {
           
              <div className="flex items-center justify-center">
               <p className="text-[#4A6278] leading-relaxed mb-15 text-base font-medium max-w-xs">
-  Ingénierie électrique et solutions solaires durables. Excellence technique au service de votre patrimoine.
+  Votre partenaire ideal pour un travail efficace et durable.
 </p>
              </div>
 
