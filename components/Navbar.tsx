@@ -1,6 +1,7 @@
 
 // export default Navbar;
 import React, { useState } from 'react';
+'../assets/logo.jpg';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,19 +19,13 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-20">
           
           {/* Logo Replacement */}
-          <div 
-            className="flex-shrink-0 cursor-pointer py-2" 
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          >
-            <div className="mb-0"> {/* Changed mb-19 to mb-0 so it stays centered in the navbar */}
+            <div className="flex-shrink-0 cursor-pointer py-2">
               <img 
                 src="/logo.jpg" 
                 alt="Logo" 
-                className="h-20 w-auto object-contain" // Recommended h-20 for visibility, adjust to h-40 if you want it very large
+                className="h-20 w-auto object-contain" 
               />
-            </div>
-          </div>
-          
+            </div>  
           {/* Menu Desktop - Caché sur Mobile */}
           <div className="hidden md:flex space-x-8 items-center">
             {navLinks.map((link) => (
