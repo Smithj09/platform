@@ -41,7 +41,7 @@ const App: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row gap-6">
               <a href="#calculator" className="bg-[#FFC600] text-[#0D3156] px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-2xl shadow-[#FFC600]/40 flex items-center justify-center gap-3">
-                consulter nos réalisations<i className="fa-solid fa-bolt"></i>
+                Nos réalisations<i className="fa-solid fa-bolt"></i>
               </a>
               <a href="#solutions" className="bg-white/10 backdrop-blur-xl text-white border-2 border-white/30 px-12 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-white/20 transition-all flex items-center justify-center">
                 un clic contactez-nous via whatsapp <i className="fa-brands fa-whatsapp text-lg ml-2"></i>
