@@ -31,7 +31,7 @@ const App: React.FC = () => {
             
             <h1 className="text-5xl lg:text-7xl font-black text-white leading-[1.1] mb-8 drop-shadow-xl">
               INSTALLATION  <br/>
-              <span className="text-[#FFC600] text-7xl">PHOTOVOLTAIQUE</span> <br/>
+              <span className="text-[#FFC600] lg:text-7xl">PHOTOVOLTAIQUE</span> <br/>
             
             </h1>
             
