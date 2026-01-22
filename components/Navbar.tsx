@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Menu Mobile Déroulant */}
-      <div className={`md:hidden bg-white border-t border-slate-100 transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`md:hidden bg-white border-t border-slate-100 transition-all duration-900 ease-in-out overflow-hidden ${isOpen ? 'h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="px-4 pt-2 pb-8 space-y-1">
           {navLinks.map((link) => (
             <a
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
               className="block w-full text-center bg-[#0D3156] text-white px-6 py-5 rounded-2xl font-bold shadow-lg uppercase tracking-widest text-xs"
               onClick={() => setIsOpen(false)}
             >
-              Obtenir un devis gratuit
+              contactez-Nous
             </a>
           </div>
         </div>
