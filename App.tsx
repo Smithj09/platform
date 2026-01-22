@@ -29,9 +29,9 @@ const App: React.FC = () => {
               AD Innovation Services Plus
             </div>
             
-            <h1 className="text-5xl lg:text-8xl font-black text-white leading-[1.1] mb-8 drop-shadow-xl">
+            <h1 className="text-5xl lg:text-7xl font-black text-white leading-[1.1] mb-8 drop-shadow-xl">
               INSTALLATION  <br/>
-              <span className="text-[#FFC600]">PHOTOVOLTAIQUE</span> <br/>
+              <span className="text-[#FFC600] text-7xl">PHOTOVOLTAIQUE</span> <br/>
             
             </h1>
             
