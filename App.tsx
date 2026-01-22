@@ -39,10 +39,16 @@ const App: React.FC = () => {
               Installation, entretien, performance; l'énergie solaire c'est notre métier.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6">
-              <a href="#calculator" className="bg-[#FFC600] text-[#0D3156] px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-2xl shadow-[#FFC600]/40 flex items-center justify-center gap-3">
-                Nos réalisations<i className="fa-solid fa-bolt"></i>
-              </a>
+              <div className="flex flex-col sm:flex-row gap-6">
+               <a
+                  href="https://galleri-black.vercel.app/"
+                  target="_blank"  // optional: opens in a new tab
+                  rel="noopener noreferrer"
+                  className="uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-2xl shadow-[#FFC600]/40 flex items-center justify-center gap-3 px-4 py-2 rounded-md bg-black text-white"
+                >
+                  Nos réalisations <i className="fa-solid fa-bolt"></i>
+                </a>
+
               <a href="#solutions" className="bg-white/10 backdrop-blur-xl text-white border-2 border-white/30 px-12 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-white/20 transition-all flex items-center justify-center">
                 un clic contactez-nous via whatsapp <i className="fa-brands fa-whatsapp text-lg ml-2"></i>
               </a>
@@ -126,7 +132,7 @@ const App: React.FC = () => {
             <img 
             src="https://i.postimg.cc/5y2pkLJ9/logo.jpg" 
             alt="Solar Logo" 
-            className="h-32 w-auto object-contain" 
+            className="h-40 w-auto object-contain" 
           />
           </div>
           
