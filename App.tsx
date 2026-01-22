@@ -15,7 +15,7 @@ const App: React.FC = () => {
       <section className="relative min-h-[90vh] flex items-center pt-24 overflow-hidden">
         {/* L'image de fond */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-20" 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat -z-†20" 
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=2000')" }}
         ></div>
         
@@ -26,26 +26,25 @@ const App: React.FC = () => {
           <div className="max-w-3xl py-20">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#FFC600] text-[#0D3156] rounded-full text-[11px] font-black mb-10 tracking-[0.2em] uppercase shadow-xl">
               <span className="w-2 h-2 bg-[#0D3156] rounded-full animate-pulse"></span>
-              Innovation Services Plus
+              AD Innovation Services Plus
             </div>
             
             <h1 className="text-5xl lg:text-8xl font-black text-white leading-[1.1] mb-8 drop-shadow-xl">
-              Ingénierie de <br/>
-              <span className="text-[#FFC600]">Puissance</span> <br/>
-              Professionnelle.
+              INSTALLATION  <br/>
+              <span className="text-[#FFC600]">PHOTOVOLTAIQUE</span> <br/>
+            
             </h1>
             
             <p className="text-xl lg:text-2xl text-white/90 mb-12 leading-relaxed max-w-xl font-medium drop-shadow-lg">
-              Expertise certifiée en photovoltaïque et réseaux électriques de pointe. 
-              Propulsez votre bâtiment vers l'indépendance énergétique totale.
+              Installation, entretien, performance; l'énergie solaire c'est notre métier.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6">
               <a href="#calculator" className="bg-[#FFC600] text-[#0D3156] px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-sm hover:scale-105 transition-all shadow-2xl shadow-[#FFC600]/40 flex items-center justify-center gap-3">
-                Lancer l'Analyse <i className="fa-solid fa-bolt"></i>
+                consulter nos réalisations<i className="fa-solid fa-bolt"></i>
               </a>
               <a href="#solutions" className="bg-white/10 backdrop-blur-xl text-white border-2 border-white/30 px-12 py-5 rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-white/20 transition-all flex items-center justify-center">
-                Nos Solutions
+                un clic contactez-nous via whatsapp <i className="fa-brands fa-whatsapp text-lg ml-2"></i>
               </a>
             </div>
           </div>
@@ -133,7 +132,7 @@ const App: React.FC = () => {
           
              <div className="flex items-center justify-center">
               <p className="text-[#4A6278] leading-relaxed mb-15 text-base font-medium max-w-xs">
-  Votre partenaire ideal pour un travail efficace et durable.
+  Votre partenaire ideal pour un travail efficace et durable.g
 </p>
              </div>
 
