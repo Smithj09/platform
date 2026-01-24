@@ -11,6 +11,7 @@ import ProtectedAdminRoute from './components/ProtectedAdminRoute';
 import AdminPanel from './components/AdminPanel';
 import Formations from './components/Formations';
 import Team from './components/Team';
+import AnimatedText from './components/AnimatedText';
 // import Logo from './components/Logo';
 '../assets/logo.jpg';
 
@@ -37,7 +38,12 @@ const HomeContent: React.FC = () => {
             
             <h1 className="text-4xl lg:text-7xl md:text-3xl font-black text-white leading-[1.1] mb-8 drop-shadow-xl">
               INSTALLATION  <br/>
-              <span className="text-[#FFC600] md:text-3xl lg:text-7xl">PHOTOVOLTAIQUE</span> <br/>
+              <AnimatedText 
+                text="PHOTOVOLTAIQUE" 
+                className="text-[#FFC600] md:text-3xl lg:text-7xl inline-block"
+                speed={80}
+              />
+              <br/>
             
             </h1>
             

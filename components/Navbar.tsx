@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
     { label: 'Services', href: '#solutions' },
     { label: 'Notre Equipe', href: '#/team' },
     { label: 'Formations', href: '#/formations' },
+    { label: 'Nos Réalisations', href: 'https://galleri-black.vercel.app/' },
     { label: 'À Propos', href: '#about' },
   ];
 
