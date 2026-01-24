@@ -57,7 +57,12 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Section Solutions */}
+
+
+
+
+
+      {/* Secction Services */}
       <section id="solutions" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-24">
@@ -101,6 +106,96 @@ const App: React.FC = () => {
           </div>
         </div>
       </section>
+
+               
+       {/* Section Team */}
+
+<section id="solutions" className="py-24 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Section Header */}
+    <div className="text-center max-w-3xl mx-auto mb-24">
+      <h3 className="text-4xl lg:text-5xl font-extrabold text-[#0D3156] mb-8">
+        Notre <span className="text-[#FFC600]">Équipe</span>
+      </h3>
+      <p className="text-lg text-[#4A6278]">
+        Notre équipe œuvre ensemble pour apporter la lumière à la communauté haïtienne grâce à l’installation de systèmes solaires.
+      </p>
+    </div>
+
+    {/* Team Members Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      {/* Example Team Member */}
+      <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+        <img
+          className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+          src="/images/team1.jpg"
+          alt="Nom du membre"
+        />
+        <h4 className="text-xl font-semibold text-[#0D3156]">Jean Pierre</h4>
+        <p className="text-[#4A6278] mt-2">Ingénieur solaire</p>
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+        <img
+          className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+          src="/images/team2.jpg"
+          alt="Nom du membre"
+        />
+        <h4 className="text-xl font-semibold text-[#0D3156]">Marie Claire</h4>
+        <p className="text-[#4A6278] mt-2">Gestion de projet</p>
+      </div>
+
+      <div className="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+        <img
+          className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
+          src="/images/team3.jpg"
+          alt="Nom du membre"
+        />
+        <h4 className="text-xl font-semibold text-[#0D3156]">Louis Emmanuel</h4>
+        <p className="text-[#4A6278] mt-2">Technicien solaire</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Composant Calculateur AI */}
       <Calculator />
