@@ -14,16 +14,12 @@ export interface SolarEstimateResponse {
   advice: string;
 }
 
-export interface Testimonial {
-  id: number;
+export interface User {
+  id: string;
+  email: string;
   name: string;
-  location: string;
-  comment: string;
-  rating: number;
-  image: string;
+  isAdmin?: boolean;
+  createdAt?: string;
+  lastLogin?: string;
 }
 
-export interface NavItem {
-  label: string;
-  href: string;
-}

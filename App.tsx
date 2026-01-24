@@ -7,6 +7,8 @@ import Calculator from './components/Calculator';
 import Login from './components/Login';
 import Register from './components/Register';
 import ProtectedRoute from './components/ProtectedRoute';
+import ProtectedAdminRoute from './components/ProtectedAdminRoute';
+import AdminPanel from './components/AdminPanel';
 // import Logo from './components/Logo';
 '../assets/logo.jpg';
 
@@ -298,6 +300,12 @@ const App: React.FC = () => {
         return <Login />;
       case '/register':
         return <Register />;
+      case '/admin':
+        return (
+          <ProtectedAdminRoute>
+            <AdminPanel />
+          </ProtectedAdminRoute>
+        );
       case '/dashboard':
         return (
           <ProtectedRoute>

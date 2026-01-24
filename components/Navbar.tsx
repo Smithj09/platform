@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { isAuthenticated, user, logout } = useAuth();
+  const { isAuthenticated, isAdmin, user, logout } = useAuth();
 
   const navLinks = [
     { label: 'Services', href: '#solutions' },
@@ -46,6 +46,14 @@ const Navbar: React.FC = () => {
                 <span className="text-[#4A6278] text-[11px] font-bold">
                   {user?.name}
                 </span>
+                {isAdmin && (
+                  <a 
+                    href="#/admin" 
+                    className="bg-blue-600 text-white px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-blue-700 transition-all shadow-md"
+                  >
+                    Admin
+                  </a>
+                )}
                 <button 
                   onClick={logout}
                   className="bg-red-600 text-white px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-red-700 transition-all shadow-md"
@@ -103,6 +111,15 @@ const Navbar: React.FC = () => {
                 <div className="px-4 py-3 text-sm font-bold text-[#0D3156] border-t border-slate-100">
                   {user?.name}
                 </div>
+                {isAdmin && (
+                  <a
+                    href="#/admin"
+                    className="block w-full text-center bg-blue-600 text-white px-6 py-3 rounded-xl font-bold uppercase tracking-widest text-xs"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Admin
+                  </a>
+                )}
                 <button
                   onClick={() => {
                     logout();
