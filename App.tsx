@@ -229,12 +229,61 @@ const HomeContent: React.FC = () => {
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="border-t border-slate-200 my-8"></div>
+          {/* Divider with Gradient */}
+          <div className="my-12 relative">
+            <div className="border-t border-slate-200"></div>
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-4">
+              <div className="flex gap-2">
+                <span className="w-2 h-2 bg-[#FFC600] rounded-full"></span>
+                <span className="w-2 h-2 bg-[#FFC600] rounded-full"></span>
+                <span className="w-2 h-2 bg-[#FFC600] rounded-full"></span>
+              </div>
+            </div>
+          </div>
 
-          {/* Bottom Section */}
-          <div className="text-center text-xs text-[#4A6278]/70 font-bold tracking-widest uppercase">
-            <p>&copy; {new Date().getFullYear()} AD Innovation Services Plus. Engineering Excellence.</p>
+          {/* Bottom Section - Enhanced */}
+          <div className="pb-6">
+            {/* Quick Links */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+              <div className="text-center">
+                <p className="text-xs font-bold text-[#FFC600] mb-2 uppercase tracking-widest">Solutions</p>
+                <ul className="space-y-2 text-xs text-[#4A6278]">
+                  <li><a href="#" className="hover:text-[#FFC600] transition-colors">Installation</a></li>
+                  <li><a href="#" className="hover:text-[#FFC600] transition-colors">Maintenance</a></li>
+                </ul>
+              </div>
+              <div className="text-center">
+                <p className="text-xs font-bold text-[#FFC600] mb-2 uppercase tracking-widest">Formations</p>
+                <ul className="space-y-2 text-xs text-[#4A6278]">
+                  <li><a href="#/formations" className="hover:text-[#FFC600] transition-colors">Voir Formations</a></li>
+                  <li><a href="#/team" className="hover:text-[#FFC600] transition-colors">Notre Équipe</a></li>
+                </ul>
+              </div>
+              <div className="text-center">
+                <p className="text-xs font-bold text-[#FFC600] mb-2 uppercase tracking-widest">Ressources</p>
+                <ul className="space-y-2 text-xs text-[#4A6278]">
+                  <li><a href="#" className="hover:text-[#FFC600] transition-colors">Blog</a></li>
+                  <li><a href="#" className="hover:text-[#FFC600] transition-colors">Support</a></li>
+                </ul>
+              </div>
+              <div className="text-center">
+                <p className="text-xs font-bold text-[#FFC600] mb-2 uppercase tracking-widest">Légal</p>
+                <ul className="space-y-2 text-xs text-[#4A6278]">
+                  <li><a href="#" className="hover:text-[#FFC600] transition-colors">Conditions</a></li>
+                  <li><a href="#" className="hover:text-[#FFC600] transition-colors">Confidentialité</a></li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Copyright Section */}
+            <div className="bg-gradient-to-r from-[#0D3156]/5 to-[#FFC600]/5 rounded-lg px-8 py-6 text-center border border-slate-100">
+              <p className="text-xs text-[#4A6278]/80 font-bold tracking-widest uppercase mb-2">
+                © {new Date().getFullYear()} AD Innovation Services Plus
+              </p>
+              <p className="text-xs text-[#FFC600] font-black tracking-widest">
+                🚀 Engineering Excellence 🚀
+              </p>
+            </div>
           </div>
         </div>
       </footer>
