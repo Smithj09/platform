@@ -11,9 +11,10 @@ const Formations: React.FC = () => {
   const [showEnrollModal, setShowEnrollModal] = useState(false);
   const [selectedFormation, setSelectedFormation] = useState<Formation | null>(null);
   const [enrollmentForm, setEnrollmentForm] = useState({
+    fullName: '',
     phone: '',
-    company: '',
-    experience: '',
+    age: '',
+    previousSchool: '',
   });
 
   // Debug log
@@ -64,7 +65,7 @@ const Formations: React.FC = () => {
       // Open enrollment modal
       setSelectedFormation(formation);
       setShowEnrollModal(true);
-      setEnrollmentForm({ phone: '', company: '', experience: '' });
+      setEnrollmentForm({ fullName: '', phone: '', age: '', previousSchool: '' });
     }
   };
 
@@ -72,16 +73,20 @@ const Formations: React.FC = () => {
     if (!selectedFormation) return;
 
     // Validation
+    if (!enrollmentForm.fullName.trim()) {
+      alert('Veuillez entrer votre nom complet');
+      return;
+    }
     if (!enrollmentForm.phone.trim()) {
       alert('Veuillez entrer votre numéro de téléphone');
       return;
     }
-    if (!enrollmentForm.company.trim()) {
-      alert('Veuillez entrer le nom de votre entreprise');
+    if (!enrollmentForm.age.trim()) {
+      alert('Veuillez entrer votre âge');
       return;
     }
-    if (!enrollmentForm.experience.trim()) {
-      alert('Veuillez sélectionner votre niveau d\'expérience');
+    if (!enrollmentForm.previousSchool.trim()) {
+      alert('Veuillez entrer votre école précédente');
       return;
     }
 
@@ -243,7 +248,7 @@ const Formations: React.FC = () => {
                     <span className="text-2xl font-black text-[#0D3156]">${formation.price}</span>
                     <button
                       onClick={() => handleEnroll(formation.id)}
-                      disabled={!isAuthenticated && !enrolledFormations.includes(formation.id)}
+                      disabled={formation.enrolled >= formation.capacity}
                       className={`px-6 py-2 rounded-lg font-bold transition-all ${
                         enrolledFormations.includes(formation.id)
                           ? 'bg-red-600 text-white hover:bg-red-700'
@@ -343,6 +348,17 @@ const Formations: React.FC = () => {
               {/* Form */}
               <div className="space-y-4">
                 <div>
+                  <label className="block font-bold text-[#0D3156] mb-2 text-sm">Nom Complet *</label>
+                  <input
+                    type="text"
+                    value={enrollmentForm.fullName}
+                    onChange={(e) => setEnrollmentForm({ ...enrollmentForm, fullName: e.target.value })}
+                    placeholder="Jean Dupont"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#FFC600] outline-none transition-all"
+                  />
+                </div>
+
+                <div>
                   <label className="block font-bold text-[#0D3156] mb-2 text-sm">Numéro de Téléphone *</label>
                   <input
                     type="tel"
@@ -354,28 +370,26 @@ const Formations: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block font-bold text-[#0D3156] mb-2 text-sm">Entreprise *</label>
+                  <label className="block font-bold text-[#0D3156] mb-2 text-sm">Âge *</label>
                   <input
-                    type="text"
-                    value={enrollmentForm.company}
-                    onChange={(e) => setEnrollmentForm({ ...enrollmentForm, company: e.target.value })}
-                    placeholder="Nom de votre entreprise"
+                    type="number"
+                    value={enrollmentForm.age}
+                    onChange={(e) => setEnrollmentForm({ ...enrollmentForm, age: e.target.value })}
+                    placeholder="25"
+                    min="18"
                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#FFC600] outline-none transition-all"
                   />
                 </div>
 
                 <div>
-                  <label className="block font-bold text-[#0D3156] mb-2 text-sm">Niveau d'Expérience *</label>
-                  <select
-                    value={enrollmentForm.experience}
-                    onChange={(e) => setEnrollmentForm({ ...enrollmentForm, experience: e.target.value })}
+                  <label className="block font-bold text-[#0D3156] mb-2 text-sm">École Précédente *</label>
+                  <input
+                    type="text"
+                    value={enrollmentForm.previousSchool}
+                    onChange={(e) => setEnrollmentForm({ ...enrollmentForm, previousSchool: e.target.value })}
+                    placeholder="Nom de votre école ou université"
                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#FFC600] outline-none transition-all"
-                  >
-                    <option value="">Sélectionnez votre niveau</option>
-                    <option value="Débutant">Débutant - Sans expérience</option>
-                    <option value="Intermédiaire">Intermédiaire - 1-3 ans</option>
-                    <option value="Avancé">Avancé - 3+ ans</option>
-                  </select>
+                  />
                 </div>
               </div>
 
