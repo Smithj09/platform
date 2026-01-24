@@ -135,66 +135,105 @@ const HomeContent: React.FC = () => {
 
 
 {/* FOOTER */}
-      {/* Pied de page */}
-      <footer id="contact" className="bg-white text-[#0D3156] pt-10 pb-5 overflow-hidden border-t border-slate-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mb-10">
-            <div className="lg:col-span-1">
-             <div className="flex-shrink-0 cursor-pointer  flex items-center justify-center">
-                   
-            <img 
-            src="https://i.postimg.cc/5y2pkLJ9/logo.jpg" 
-            alt="Solar Logo" 
-            className="h-40 w-auto object-contain" 
-          />
-          </div>
-          
-             <div className="flex items-center justify-center">
-              <p className="text-[#4A6278] leading-relaxed mb-15 text-base font-medium max-w-xs">
-  Votre partenaire ideal pour un travail efficace et durable.g
-</p>
-             </div>
-
-             <div className="flex items-center justify-center">
-               <div className="flex gap-4">
+      <footer id="contact" className="bg-white text-[#0D3156] py-16 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Main Footer Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+            {/* Company Column */}
+            <div className="text-center md:text-left">
+              <img 
+                src="https://i.postimg.cc/5y2pkLJ9/logo.jpg" 
+                alt="AD Innovation Logo" 
+                className="h-20 w-auto object-contain mb-6 mx-auto md:mx-0"
+              />
+              <p className="text-[#4A6278] leading-relaxed text-sm mb-6 font-medium">
+                Votre partenaire idéal pour un travail efficace et durable.
+              </p>
+              <div className="flex gap-4 justify-center md:justify-start">
                 {['facebook', 'twitter', 'linkedin', 'instagram'].map(social => (
-                  <a key={social} href="#" className="w-12 h-12 rounded-2xl bg-[#0D3156]/5 flex items-center justify-center text-[#0D3156] hover:bg-[#FFC600] hover:text-[#0D3156] transition-all">
-                    <i className={`fa-brands fa-${social} text-lg`}></i>
+                  <a 
+                    key={social} 
+                    href="#" 
+                    className="w-10 h-10 rounded-full bg-[#0D3156]/10 flex items-center justify-center text-[#0D3156] hover:bg-[#FFC600] transition-all transform hover:scale-110"
+                  >
+                    <i className={`fa-brands fa-${social}`}></i>
                   </a>
                 ))}
               </div>
-
-             </div>
-         
             </div>
-            
+
+            {/* Services Column */}
             <div>
-              <div className="flex items-center justify-center">
-                <h4 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-10 font-extrabold text-sm underline">Nos Services</h4>
-              </div>
-              
-              <ul className="space-y-4 list-disc text-sm font-bold text-[#4A6278]">
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Consultation et étude technique des systemes solaires.</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Évaluation de consommation d'énergie électrique et dimensionnement de systeme solaire.</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Installation complete de systeme photovoltaique(Panneau solaire , Regulateur, batterie, Inverter...)</a></li>
-                <li><a href="#" className="hover:text-[#FFC600] transition-colors">Services de diagnostic et de prevention des anomalies dans les systemes solaires</a></li>
+              <h4 className="text-[#0D3156] font-black uppercase tracking-[0.15em] text-sm mb-8 flex items-center gap-2 justify-center md:justify-start">
+                <span className="w-1 h-5 bg-[#FFC600] rounded-full"></span>
+                Nos Services
+              </h4>
+              <ul className="space-y-3 text-sm text-[#4A6278] font-medium">
+                <li className="flex gap-3 items-start">
+                  <i className="fa-solid fa-check text-[#FFC600] mt-1 flex-shrink-0"></i>
+                  <a href="#" className="hover:text-[#FFC600] transition-colors">Consultation et étude technique</a>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <i className="fa-solid fa-check text-[#FFC600] mt-1 flex-shrink-0"></i>
+                  <a href="#" className="hover:text-[#FFC600] transition-colors">Évaluation énergétique</a>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <i className="fa-solid fa-check text-[#FFC600] mt-1 flex-shrink-0"></i>
+                  <a href="#" className="hover:text-[#FFC600] transition-colors">Installation photovoltaïque complète</a>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <i className="fa-solid fa-check text-[#FFC600] mt-1 flex-shrink-0"></i>
+                  <a href="#" className="hover:text-[#FFC600] transition-colors">Diagnostic et maintenance</a>
+                </li>
               </ul>
             </div>
 
-            <div >
-              <div className="flex items-center justify-center">
-                  <h4 className="text-[#0D3156] font-black uppercase tracking-[0.2em] text-[10px] mb-10 font-extrabold text-sm underline">Contactez-Nous</h4>
+            {/* Contact Column */}
+            <div>
+              <h4 className="text-[#0D3156] font-black uppercase tracking-[0.15em] text-sm mb-8 flex items-center gap-2 justify-center md:justify-start">
+                <span className="w-1 h-5 bg-[#FFC600] rounded-full"></span>
+                Contactez-Nous
+              </h4>
+              <div className="space-y-5 text-sm text-[#4A6278] font-medium">
+                <div className="flex gap-3 items-start">
+                  <div className="flex items-center justify-center h-8 w-8 rounded-lg bg-[#FFC600]/20 flex-shrink-0 mt-0.5">
+                    <i className="fa-solid fa-map-pin text-[#FFC600] text-sm"></i>
+                  </div>
+                  <div>
+                    <p className="font-bold text-[#0D3156] text-xs mb-1">Adresse</p>
+                    <p className="leading-relaxed">45 Arrondissement Ouanaminthe, Nord-Est HT<br/>Rue Parc Sportif Manquette</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 items-center">
+                  <div className="flex items-center justify-center h-8 w-8 rounded-lg bg-[#FFC600]/20 flex-shrink-0">
+                    <i className="fa-solid fa-phone text-[#FFC600] text-sm"></i>
+                  </div>
+                  <a href="tel:+50940768840" className="hover:text-[#FFC600] transition-colors">+509 4076-8840</a>
+                </div>
+
+                <div className="flex gap-3 items-center">
+                  <div className="flex items-center justify-center h-8 w-8 rounded-lg bg-[#FFC600]/20 flex-shrink-0">
+                    <i className="fa-solid fa-phone text-[#FFC600] text-sm"></i>
+                  </div>
+                  <a href="tel:+50938733401" className="hover:text-[#FFC600] transition-colors">+509 3873-3401</a>
+                </div>
+
+                <div className="flex gap-3 items-center">
+                  <div className="flex items-center justify-center h-8 w-8 rounded-lg bg-[#FFC600]/20 flex-shrink-0">
+                    <i className="fa-solid fa-envelope text-[#FFC600] text-sm"></i>
+                  </div>
+                  <a href="mailto:adinnovation01@example.com" className="hover:text-[#FFC600] transition-colors">adinnovation01</a>
+                </div>
               </div>
-              <ul className="space-y-6 text-sm font-bold text-[#4A6278]">
-                <li className="flex gap-4 items-start leading-relaxed"><i className="fa-solid fa-location-dot text-[#FFC600] mt-1"></i> 45 Arrondissement Ouanaminthe, Nord-Est HT<br/>Rue Parc Sportif Manquette</li>
-                <li className="flex gap-4 items-center"><i className="fa-solid fa-phone text-[#FFC600]"></i> +509 4076-8840</li>
-                <li className="flex gap-4 items-center"><i className="fa-solid fa-phone text-[#FFC600]"></i> +509 3873-3401</li>
-                <li className="flex gap-4 items-center"><i className="fa-solid fa-envelope text-[#FFC600]"></i>adinnovation01</li>
-              </ul>
             </div>
           </div>
-          
-          <div className="pt-1 border-t border-slate-100 text-center text-[10px] text-[#4A6278]/60 font-black tracking-[0.4em] uppercase">
+
+          {/* Divider */}
+          <div className="border-t border-slate-200 my-8"></div>
+
+          {/* Bottom Section */}
+          <div className="text-center text-xs text-[#4A6278]/70 font-bold tracking-widest uppercase">
             <p>&copy; {new Date().getFullYear()} AD Innovation Services Plus. Engineering Excellence.</p>
           </div>
         </div>
