@@ -9,6 +9,7 @@ import Register from './components/Register';
 import ProtectedRoute from './components/ProtectedRoute';
 import ProtectedAdminRoute from './components/ProtectedAdminRoute';
 import AdminPanel from './components/AdminPanel';
+import Formations from './components/Formations';
 // import Logo from './components/Logo';
 '../assets/logo.jpg';
 
@@ -322,6 +323,8 @@ const App: React.FC = () => {
             </div>
           </ProtectedRoute>
         );
+      case '/formations':
+        return <Formations />;
       default:
         return <HomeContent />;
     }
