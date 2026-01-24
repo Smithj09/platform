@@ -1,16 +1,18 @@
 
 import React from 'react';
+import { AuthProvider } from './context/AuthContext';
+import { useRouter } from './hooks/useNavigate';
 import Navbar from './components/Navbar';
 import Calculator from './components/Calculator';
+import Login from './components/Login';
+import Register from './components/Register';
+import ProtectedRoute from './components/ProtectedRoute';
 // import Logo from './components/Logo';
 '../assets/logo.jpg';
 
-
-const App: React.FC = () => {
+const HomeContent: React.FC = () => {
   return (
     <div className="min-h-screen selection:bg-[#FFC600]/30 font-sans">
-      <Navbar />
-
       {/* Section Hero avec Image de Panneaux Solaires bien visible */}
       <section className="relative min-h-[90vh] flex items-center pt-24 overflow-hidden">
         {/* L'image de fond */}
@@ -282,6 +284,46 @@ const App: React.FC = () => {
         </div>
       </footer>
     </div>
+  );
+};
+
+const App: React.FC = () => {
+  const { currentRoute } = useRouter();
+
+  const renderView = () => {
+    const path = currentRoute.split('?')[0];
+    
+    switch (path) {
+      case '/login':
+        return <Login />;
+      case '/register':
+        return <Register />;
+      case '/dashboard':
+        return (
+          <ProtectedRoute>
+            <div className="min-h-screen bg-gray-50 pt-24 px-4">
+              <div className="max-w-7xl mx-auto">
+                <h1 className="text-4xl font-black text-[#0D3156] mb-8">Tableau de Bord</h1>
+                <div className="bg-white rounded-xl shadow-lg p-8">
+                  <p className="text-gray-600 mb-4">Bienvenue sur votre tableau de bord personnalisé.</p>
+                  <ProtectedRoute>
+                    <Calculator />
+                  </ProtectedRoute>
+                </div>
+              </div>
+            </div>
+          </ProtectedRoute>
+        );
+      default:
+        return <HomeContent />;
+    }
+  };
+
+  return (
+    <AuthProvider>
+      <Navbar />
+      {renderView()}
+    </AuthProvider>
   );
 };
 

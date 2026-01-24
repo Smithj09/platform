@@ -1,10 +1,12 @@
 
 // export default Navbar;
 import React, { useState } from 'react';
+import { useAuth } from '../context/AuthContext';
 '../assets/logo.jpg';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { isAuthenticated, user, logout } = useAuth();
 
   const navLinks = [
     { label: 'Services', href: '#solutions' },
@@ -38,12 +40,35 @@ const Navbar: React.FC = () => {
                 {link.label}
               </a>
             ))}
-            <a 
-              href="#contact" 
-              className="bg-[#0D3156] text-white px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-[#1a457a] transition-all shadow-md"
-            >
-              Contactez-nous
-            </a>
+            
+            {isAuthenticated ? (
+              <div className="flex items-center gap-3">
+                <span className="text-[#4A6278] text-[11px] font-bold">
+                  {user?.name}
+                </span>
+                <button 
+                  onClick={logout}
+                  className="bg-red-600 text-white px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:bg-red-700 transition-all shadow-md"
+                >
+                  Déconnexion
+                </button>
+              </div>
+            ) : (
+              <div className="flex items-center gap-3">
+                <a 
+                  href="#/login" 
+                  className="text-[#4A6278] px-4 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:text-[#0D3156] transition-all"
+                >
+                  Connexion
+                </a>
+                <a 
+                  href="#/register" 
+                  className="bg-[#FFC600] text-[#0D3156] px-6 py-3 rounded-xl text-[10px] font-black uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-md"
+                >
+                  S'inscrire
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Bouton Mobile */}
@@ -72,14 +97,40 @@ const Navbar: React.FC = () => {
               {link.label}
             </a>
           ))}
-          <div className="pt-4">
-            <a
-              href="#contact"
-              className="block w-full text-center bg-[#0D3156] text-white px-6 py-5 rounded-2xl font-bold shadow-lg uppercase tracking-widest text-xs"
-              onClick={() => setIsOpen(false)}
-            >
-              contactez-Nous
-            </a>
+          <div className="pt-4 space-y-3">
+            {isAuthenticated ? (
+              <>
+                <div className="px-4 py-3 text-sm font-bold text-[#0D3156] border-t border-slate-100">
+                  {user?.name}
+                </div>
+                <button
+                  onClick={() => {
+                    logout();
+                    setIsOpen(false);
+                  }}
+                  className="w-full text-center bg-red-600 text-white px-6 py-3 rounded-xl font-bold uppercase tracking-widest text-xs"
+                >
+                  Déconnexion
+                </button>
+              </>
+            ) : (
+              <>
+                <a
+                  href="#/login"
+                  className="block w-full text-center text-[#0D3156] px-6 py-3 rounded-xl font-bold uppercase tracking-widest text-xs border border-[#0D3156] hover:bg-slate-50"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Connexion
+                </a>
+                <a
+                  href="#/register"
+                  className="block w-full text-center bg-[#FFC600] text-[#0D3156] px-6 py-3 rounded-xl font-bold uppercase tracking-widest text-xs"
+                  onClick={() => setIsOpen(false)}
+                >
+                  S'inscrire
+                </a>
+              </>
+            )}
           </div>
         </div>
       </div>
